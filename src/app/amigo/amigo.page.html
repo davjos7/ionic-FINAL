@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>amigo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+
+  <h1>{{ amigo?.nombre_completo }}</h1>
+  <h3>23/10/2023 11:00pm</h3>
+
+  <h5>
+    <b>Telefono: </b>{{ amigo?.telefono }} <br>
+    <b>Correo: </b>{{ amigo?.correo }} <br>
+  </h5>
+  
+  <hr>
+  <h2>Asistentes</h2>
+  <ul>
+    <li>Superman</li>
+    <li>Batman</li>
+    <li>flash</li>
+  </ul>
+</ion-content>
+

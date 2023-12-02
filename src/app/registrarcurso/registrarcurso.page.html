@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>REGISTRAR CURSO</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-item fill="outline" class="ion-margin">
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input placeholder="Escribe tu nombre" [(ngModel)]="nombre"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-select label="Selecciona el tipo" label-placement="floating"  [(ngModel)]="tipo">
+      <ion-select-option value="carrera">Carrera</ion-select-option >
+      <ion-select-option value="general">General</ion-select-option>
+    </ion-select>
+  </ion-item>
+  
+  <ion-item fill="outline" class="ion-margin">
+    <ion-label position="floating">Profesor</ion-label>
+    <ion-input placeholder="Nombre Profesor" [(ngModel)]="profesor"></ion-input>
+  </ion-item>
+
+  <ion-item fill="outline" class="ion-margin">
+    <ion-label position="floating">Nº Alumnos</ion-label>
+    <ion-input placeholder="Nº Alumnos" [(ngModel)]="numero_alumnos"></ion-input>
+  </ion-item>
+
+  <ion-item fill="outline" class="ion-margin">
+    <ion-label position="floating">Aula</ion-label>
+    <ion-input placeholder="Aula" [(ngModel)]="aula"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" fill="outline" class="ion-margin" (click)="guardar()">
+    Registrar
+  </ion-button>
+
+  <ion-alert
+    [isOpen] = "notificar"
+    header = "Curso registrado exitosamente"
+    message = "Puedes ir a los Cursos para verlo"
+    [buttons] = "botones">
+  </ion-alert>
+</ion-content>

@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card *ngFor="let amigo of amigos | async" (click)="VerDetalle(amigo)">
+    <ion-card-header>
+      <ion-card-title>{{ amigo.nombre_completo }}</ion-card-title>
+      <ion-card-subtitle></ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <b>Telefono: </b>{{ amigo?.telefono }} <br>
+      <b>correo: </b>{{ amigo?.correo }} 
+    </ion-card-content>
+    <ion-button size="small" color="success">Llegoo</ion-button>
+    <ion-button size="small" color="danger">No llego</ion-button>
+  </ion-card>
+  
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="registrar()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+
+  
+</ion-content>

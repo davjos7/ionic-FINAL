@@ -1,0 +1,45 @@
+{
+    "eventos" : [
+        {   "id" : "evento1",
+            "nombre" : "fiestas de Hallowen",
+            "lugar" : "Casa de Joseph",
+            "fecha" : "2023-10-13 23:00:00",
+            "hora" : "23:00:00",
+            "notas" : "Venir disfrazados"
+        },
+        {   "id" : "evento2",
+            "nombre" : "Fiesta de Luchito",
+            "lugar" : "Casa de Hubert",
+            "fecha" : "2023-10-14 23:00:00",
+            "notas" : "Venir sin plata"
+        },
+        {   "id" : "evento3",
+            "nombre" : "fiestas de luchito2",
+            "lugar" : "Casa de ismem",
+            "fecha" : "2023-10-20 23:00:00",
+            "hora" : "18:00:00",
+            "notas" : "Venir todos"
+        },
+        {   "id" : "evento4",
+            "nombre" : "Sabado de Cine",
+            "lugar" : "Cineplanet",
+            "fecha" : "2023-10-14 23:00:00",
+            "hora" : "14:00:00",
+            "notas" : "Venir con cancha"
+        },
+        {   "id" : "evento5",
+            "nombre" : "Discoteca",
+            "lugar" : "villa el salvador",
+            "fecha" : "2023-08-02 23:00:00",
+            "hora" : "15:00:00",
+            "notas" : "Venir con plata"
+        },
+        {   "id" : "evento6",
+            "nombre" : "fiestas de Lopex",
+            "lugar" : "kfc",
+            "fecha" : "2023-10-23 23:00:00",
+            "hora" : "23:00:00",
+            "notas" : "Venir con trago"
+        }
+    ]
+}

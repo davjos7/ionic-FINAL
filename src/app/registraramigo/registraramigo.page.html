@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registrar Amigo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-item fill="outline" class="ion-margin">
+    <ion-label position="floating">Nombre Completo</ion-label>
+    <ion-input placeholder="Escribe tu nombre" [(ngModel)]="nombre_completo"></ion-input>
+  </ion-item>
+
+  <ion-item fill="outline" class="ion-margin">
+    <ion-label position="floating">telefono</ion-label>
+    <ion-input placeholder="Escribe la telefono" [(ngModel)]="telefono"></ion-input>
+  </ion-item>
+  
+  <ion-item fill="outline" class="ion-margin">
+    <ion-label position="floating">cumpleanos</ion-label>
+    <ion-input placeholder="Escribe el cumpleanos" type="datetime-local" [(ngModel)]="cumpleanos"></ion-input>
+  </ion-item>
+
+  <ion-item fill="outline" class="ion-margin">
+    <ion-label position="floating">correo</ion-label>
+    <ion-input placeholder="Escribe tu correo" [(ngModel)]="correo"></ion-input>
+  </ion-item>
+
+  <ion-item fill="outline" class="ion-margin">
+    <ion-label position="floating">contrasena</ion-label>
+    <ion-input placeholder="Escribe tu contraseña" type="password" [(ngModel)]="contrasena"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" fill="outline" class="ion-margin" (click)="guardar()">
+    Registrar Amigo
+  </ion-button>
+
+  <ion-alert
+    [isOpen] = "notificar"
+    header = "Amigo registrado exitosamente"
+    message = "Puedes ir a los eventos para verlo"
+    [buttons] = "botones">
+  </ion-alert>
+
+</ion-content>
+  

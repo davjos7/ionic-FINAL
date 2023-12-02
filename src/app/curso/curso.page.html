@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>curso</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding"  [fullscreen]="true">
+  <h1>{{ curso?.nombre }}</h1>
+
+  <h3></h3>
+
+  <h5>
+    <b>Profesor: </b>{{ curso?.profesor }}<br>
+    <b>Numero Alumnos: </b> {{ curso?.numero_alumnos }}
+  </h5>
+  
+  <hr>
+  <h2>Tipo</h2>
+  <ul>
+    <li>carrera</li>
+    <li>general</li>
+  </ul>
+</ion-content>
